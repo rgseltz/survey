@@ -7,7 +7,7 @@
         <h1>{{question.question}}</h1>
         {% for choice in question.choices %}
         <label for="{{choice}}">{{choice}}</label>
-        <input type="radio" name="answer" id="{{choice}}"><br>
+        <input type="radio" name="answer" value="{{choice}}"><br>
         {% endfor %}
         <button>Submit</button>
         

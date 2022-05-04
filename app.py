@@ -25,9 +25,7 @@ def show_question(id):
     return render_template('question.html', question=questions)
 
 @app.route('/answer', methods=['POST'])
-def submit_answer_1():
-    import pdb
-    pdb.set_trace()    
+def submit_answer_1():   
     return redirect("/question/2")
 
 @app.route('/answer', methods=['POST'])
